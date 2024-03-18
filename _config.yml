@@ -4,7 +4,7 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - docs/Entity_Alignment-v1.0.md
+  - Entity_Alignment-v1.0.md
   - CONTRIBUTING.md
   - README.md
   - LICENSE.md
