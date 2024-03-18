@@ -1,6 +1,6 @@
-## CEAI Team - Digital Catapult
+## CEAIT Team - Digital Catapult
 
-A series of blogs published by the *Cutting Edge AI Team* (CEAI Team) of Digital Catapult.
+A series of blogs published by the *Cutting Edge AI Technologies Team* (CEAIT Team) of Digital Catapult.
 
 ---
 #### 1. Entiry Alignment
