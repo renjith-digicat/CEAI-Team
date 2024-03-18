@@ -67,10 +67,11 @@ To further aid in your understanding, below is a glossary of key terms related t
 
 
     E.g;
-        
-        * Person
-    	* Car
-    	* Mobile Phone
+  ```
+  * Person
+  * Car
+  * Mobile Phone
+  ```
 
 * **Relationships (Properties)**:
 
@@ -78,11 +79,11 @@ To further aid in your understanding, below is a glossary of key terms related t
 
 
     E.g;
-
-
-    	* Owns (a person owns a car)
-    	* Has a (a person has a phone)
-        * A type of (a car is a type of vehicle)
+  ```
+  * Owns (a person owns a car)
+  * Has a (a person has a phone)
+  * A type of (a car is a type of vehicle)
+  ```
 
 * **Instances (Individuals)**:
 
@@ -90,10 +91,10 @@ To further aid in your understanding, below is a glossary of key terms related t
 
 
     E.g;
-
-
-    	* Rolls-Royce Phantom (an instance of car)
-    	* iPhone 15 pro (an instance of phone)
+  ```
+  * Rolls-Royce Phantom (an instance of car)
+  * iPhone 15 pro (an instance of phone)
+  ```
 
 * **Equivalence Relation**:
 
