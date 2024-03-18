@@ -6,4 +6,4 @@ relative_links:
 include:
   Entity_Alignment-v1.0.md
 theme:
-  jekyll-theme-Modernist
+  jekyll-theme-minimal
