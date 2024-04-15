@@ -207,271 +207,123 @@ The different ways of categorisation are:
 In the evolving field of entity alignment, numerous studies have significantly contributed to our understanding and application of this technology. The following list presents a curated selection of noteworthy publications in this domain. Each entry not only provides a direct link to the respective publication but, where available, also includes access to the corresponding codebases. This integration of literature and practical resources aims to offer a comprehensive overview for researchers and practitioners, facilitating deeper engagement with the key developments and methodologies that have shaped the current landscape of entity alignment.
 
 
+
 <table>
-  <tr>
-   <td><strong></strong>
-   </td>
-   <td><strong>Title</strong>
-   </td>
-   <td><strong>Summary</strong>
-   </td>
-   <td><strong>Links</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>1</h4>
+    <tr>
+        <td></td>
+        <td>Title</td>
+        <td>Summary</td>
+        <td>Links</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>A comprehensive survey of entity alignment for knowledge graphs</td>
+        <td>This paper investigated almost all the latest knowledge graph “representations learning” and entity alignment methods and summarised their core technologies and features from different aspects. Their full investigation gives a comprehensive outlook on several promising research directions for future work. They also provide an efficient entity alignment toolkit to help researchers quickly start their own entity alignment models.</td>
+        <td>A comprehensive survey of entity alignment for knowledge graphs - ScienceDirect
 
-
-   </td>
-   <td>
-<h4>A comprehensive survey of entity alignment for knowledge graphs</h4>
-
-
-   </td>
-   <td>This paper investigated almost all the latest knowledge graph “representations learning” and entity alignment methods and summarised their core technologies and features from different aspects. Their full investigation gives a comprehensive outlook on several promising research directions for future work. They also provide an efficient entity alignment toolkit to help researchers quickly start their own entity alignment models.
-   </td>
-   <td><a href="https://www.sciencedirect.com/science/article/pii/S2666651021000036">A comprehensive survey of entity alignment for knowledge graphs - ScienceDirect</a>
-<p>
 EAkit—Entity alignment toolkit:
-<p>
-<a href="https://github.com/THU-KEG/EAkit">GitHub - THU-KEG/EAkit: Entity Alignment toolkit (EAkit), a lightweight, easy-to-use and highly extensible PyTorch implementation of many entity alignment algorithms.</a>
-<p>
-<a href="https://github.com/nju-websoft/OpenEA">GitHub - nju-websoft/OpenEA: A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs, VLDB 2020</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>2</h4>
 
+GitHub - THU-KEG/EAkit: Entity Alignment toolkit (EAkit), a lightweight, easy-to-use and highly extensible PyTorch implementation of many entity alignGitHub - nju-websoft/OpenEA: A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs, VLDB 2020</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Entity Alignment For Knowledge Graphs: Progress, Challenges, and Empirical Studies</td>
+        <td>This paper presents a comprehensive analysis of various existing EA methods, elaborating their applications and limitations. Further, it distinguishes the methods based on their underlying algorithms and the information they incorporate to learn entity representations. 
 
-   </td>
-   <td>
-<h4>Entity Alignment For Knowledge Graphs: Progress, Challenges, and Empirical Studies</h4>
+Based on challenges in industrial datasets, this paper brings forward 4 research questions (RQs). These RQs empirically analyse the algorithms from the perspective of 1)Hubness 2)Degree distribution 3)Non-isomorphic neighbourhood, and 4)Name bias. 
 
-
-   </td>
-   <td>This paper presents a comprehensive analysis of various existing EA methods, elaborating their applications and limitations. Further, it distinguishes the methods based on their underlying algorithms and the information they incorporate to learn entity representations. 
-<p>
-Based on challenges in industrial datasets, this paper brings forward 4 research questions <strong>(RQs)</strong>. These RQs empirically analyse the algorithms from the perspective of 1)Hubness 2)Degree distribution 3)Non-isomorphic neighbourhood, and 4)Name bias. 
-<p>
 For Hubness, where one entity turns up as the nearest neighbour of many other entities, the paper defines an h-score to quantify its effect on the performance of various algorithms. Additionally, the paper tries to level the playing field for algorithms that rely primarily on name-bias existing in the benchmarking open-source datasets by creating a low name bias dataset. 
-<p>
+
 The authors provide an open-source repository for 14 embedding-based EA methods and present the analysis for invoking further research motivations in the field of EA.
    </td>
-   <td><a href="https://arxiv.org/abs/2205.08777">[2205.08777] Entity Alignment For Knowledge Graphs: Progress, Challenges, and Empirical Studies</a>
+        <td>[2205.08777] Entity Alignment For Knowledge Graphs: Progress, Challenges, and Empirical Studies
    </td>
-  </tr>
-  <tr>
-   <td>
-<h4>3</h4>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>SelfKG: Self-Supervised Entity Alignment in Knowledge Graphs</td>
+        <td>Self-supervised learning is a type of machine learning that does not require labelled data. Instead, it learns from unlabeled data by creating pretext tasks.
 
+In this paper, the authors propose a self-supervised learning approach to entity alignment called SelfKG. SelfKG learns to distinguish between positive and negative entity pairs by pushing the positive pairs closer together and the negative pairs fuThe authors evaluated SelfKG on two benchmark datasets and showed that it can achieve comparable results to state-of-the-art supervised methods without any labelled data.</td>
+        <td>https://arxiv.org/pdf/2203.01044.pdf
 
-   </td>
-   <td>
-<h4>SelfKG: Self-Supervised Entity Alignment in Knowledge Graphs</h4>
+https://github.com/THUDM/SelfKG</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>BERT-INT: A BERT-based Interaction Model For Knowledge Graph Alignment</td>
+        <td>This work presents an interaction model to only leverage the side information. Instead of aggregating neighbours, it computes the interactions between neighbours which can capture fine-grained matches of neighbours. Similarly, the interactions of attributes are also modelled.
 
-
-   </td>
-   <td>Self-supervised learning is a type of machine learning that does not require labelled data. Instead, it learns from unlabeled data by creating pretext tasks.
-<p>
-In this paper, the authors propose a self-supervised learning approach to entity alignment called SelfKG. SelfKG learns to distinguish between positive and negative entity pairs by pushing the positive pairs closer together and the negative pairs further apart.
-<p>
-The authors evaluated SelfKG on two benchmark datasets and showed that it can achieve comparable results to state-of-the-art supervised methods without any labelled data.
-   </td>
-   <td><a href="https://arxiv.org/pdf/2203.01044.pdf">https://arxiv.org/pdf/2203.01044.pdf</a>
-<p>
-<a href="https://github.com/THUDM/SelfKG">https://github.com/THUDM/SelfKG</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>4</h4>
-
-
-   </td>
-   <td>
-<h4>BERT-INT: A BERT-based Interaction Model For Knowledge Graph Alignment</h4>
-
-
-   </td>
-   <td>This work presents an interaction model to only leverage the side information. Instead of aggregating neighbours, it computes the interactions between neighbours which can capture fine-grained matches of neighbours. Similarly, the interactions of attributes are also modelled.
-<p>
 The authors treat entity alignment as the downstream objective to finetune a pre-trained BERT model.
-<p>
 Need labelled training data. Can perform well on monolingual data.
-<p>
-Authors first construct the training data D = {(e, e′+, e′−)}, where each triplet (e, e′+, e′−) ∈ D contains a queried entity e ∈ E, the rightly aligned counterpart e′+ ∈ E′ and a negative counterpart e′− randomly sampled from E′.
-   </td>
-   <td><a href="https://dl.acm.org/doi/abs/10.5555/3491440.3491879">BERT-INT: a BERT-based interaction model for knowledge graph alignment</a>
-<p>
-<a href="https://github.com/kosugi11037/bert-int">https://github.com/kosugi11037/bert-int</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>5</h4>
 
+Authors first construct the training data D = {(e, e′+, e′−)}, where each triplet (e, e′+, e′−) ∈ D contains a queried entity e ∈ E, the rightly aligned counterpart e′+ ∈ E′ and a negative counterpart e′− randomly sampled from E′.</td>
+        <td>BERT-INT: a BERT-based interaction model for knowledge graph alignment
 
-   </td>
-   <td>
-<h4>MEAformer: Multi-modal Entity Alignment Transformer for Meta Modality Hybrid</h4>
+https://github.com/kosugi11037/bert-int</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>MEAformer: Multi-modal Entity Alignment Transformer for Meta Modality Hybrid</td>
+        <td>Multi-modal entity alignment (MMEA) aims to discover identical entities across different knowledge graphs (KGs) whose entities are associated with relevant images. However, current MMEA algorithms rely on KG-level modality fusion strategies for multi-modal entity representation, which ignores the variations of modality preferences of different entities, thus compromising robustness against noise in modalities such as blurry images and relations. 
 
+This paper introduces MEAformer, a multi-modal entity alignment transformer approach for meta modality hybrid, which dynamically predicts the mutual correlation coefficients among modalities for more fine-grained entity-level modality fusion and alignment. Experimental results demonstrate that our model not only achieves SOTA performance in multiple training scenarios, including supervised, unsupervised, iterative, and low-resource settings, but also has a limited number of parameters, efficient runtime, and interpretability.</td>
+        <td>https://arxiv.org/pdf/2212.14454v4.pdf
 
-   </td>
-   <td>Multi-modal entity alignment (MMEA) aims to discover identical entities across different knowledge graphs (KGs) whose entities are associated with relevant images. However, current MMEA algorithms rely on KG-level modality fusion strategies for multi-modal entity representation, which ignores the variations of modality preferences of different entities, thus compromising robustness against noise in modalities such as blurry images and relations. 
-<p>
-This paper introduces MEAformer, a multi-modal entity alignment transformer approach for meta modality hybrid, which dynamically predicts the mutual correlation coefficients among modalities for more fine-grained entity-level modality fusion and alignment. Experimental results demonstrate that our model not only achieves SOTA performance in multiple training scenarios, including supervised, unsupervised, iterative, and low-resource settings, but also has a limited number of parameters, efficient runtime, and interpretability.
-   </td>
-   <td><a href="https://arxiv.org/pdf/2212.14454v4.pdf">https://arxiv.org/pdf/2212.14454v4.pdf</a>
-<p>
-<a href="https://github.com/zjukg/MEAformer">https://github.com/zjukg/MEAformer</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>6</h4>
+https://github.com/zjukg/MEAformer</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>MultiKE - Multi-view Knowledge Graph Embedding for Entity Alignment</td>
+        <td>In this paper, authors propose a novel framework that unifies multiple views of entities to learn embeddings for entity alignment. Specifically, they embed entities based on the views of entity names, relations and attributes, with several combination strategies. </td>
+        <td>https://arxiv.org/abs/1906.02390</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>UEA - Towards Entity Alignment in the Open World: An Unsupervised Approach</td>
+        <td>This paper offers an unsupervised framework that performs EA in the open world. First, they mine useful features from the side information of KGs. Then, they devise an unmatchable entity prediction module to filter out unmatchable entities and produce preliminary alignment results. These preliminary results are regarded as the pseudo-labeled data and forwarded to the progressive learning framework to generate structural representations, which are integrated with the side information to provide a more comprehensive view for alignment. Finally, the progressive learning framework gradually improves the quality of structural embeddings and enhances the alignment performance by enriching the pseudo-labeled data with alignment results from the previous round.</td>
+        <td>https://arxiv.org/abs/2101.10535
 
+https://github.com/DexterZeng/UEA</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>TransEdge: Translating Relation-contextualized Embeddings for Knowledge Graphs</td>
+        <td>This paper proposes a novel edge-centric embedding model TransEdge, which contextualises relation  representations in terms of specific head-tail entity pairs. We refer to such contextualised representations of a relation as edge embeddings and interpret them as translations between entity embeddings. TransEdge achieves promising performance on different prediction tasks. It obtains the state-of-the-art results on embedding-based entity alignment.They also show that TransEdge is complementary with conventional entity alignment methods. Moreover, it shows very competitive performance on link prediction as well.</td>
+        <td>https://arxiv.org/abs/2004.13579
 
-   </td>
-   <td>
-<h4>MultiKE - Multi-view Knowledge Graph Embedding for Entity Alignment</h4>
+https://github.com/nju-websoft/TransEdge</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>KECG - Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model</td>
+        <td>The basic idea of KECG is to utilise a cross-graph model to embed entities into a unified vector space by using inner-graph structure and inter-graph alignments information; meanwhile the knowledge embedding model learns KG representations to implicitly complete different KGs towards consistency and model relational constraints among entities. There are two key points for high-quality joint training. First, the completion from KG learning may exacerbate the heterogeneity between two KGs, because two KGs may contain different rich parts, which shall become richer during training. Second, different from conventional KG representation learning, entity alignment requires one-to-one mapping, which implies that the similar entities sharing common neighbours cannot be embedded closely, otherwise they shall be aligned incorrectly</td>
+        <td>https://aclanthology.org/D19-1274/
 
+https://github.com/THU-KEG/KECG</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>EMGCN - Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks</td>
+        <td>EMGCN guarantees (i) entity consistency – the names of corresponding entities should be equivalent, (ii) relation consistency – the relation is preserved from source KG to target KG, and (iii) attribute consistency – the corresponding entities should have equivalent attributes and equivalent attribute values.  They use Relation-aware Multi-order Embedding to achieve this.</td>
+        <td>https://ieeexplore.ieee.org/document/9262038
 
-   </td>
-   <td>In this paper, authors propose a novel framework that unifies multiple views of entities to learn embeddings for entity alignment. Specifically, they embed entities based on the views of entity names, relations and attributes, with several combination strategies. 
-   </td>
-   <td><a href="https://arxiv.org/abs/1906.02390">https://arxiv.org/abs/1906.02390</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>7</h4>
+https://github.com/vinhsuhi/EMGCN</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Cross-lingual knowledge graph alignment via graph matching neural network</td>
+        <td>Focused on cross-lingual knowledge graph alignment.
 
-
-   </td>
-   <td>
-<h4>UEA - Towards Entity Alignment in the Open World: An Unsupervised Approach</h4>
-
-
-   </td>
-   <td>This paper offers an unsupervised framework that performs EA in the open world. First, they mine useful features from the side information of KGs. Then, they devise an unmatchable entity prediction module to filter out unmatchable entities and produce preliminary alignment results. These preliminary results are regarded as the pseudo-labeled data and forwarded to the progressive learning framework to generate structural representations, which are integrated with the side information to provide a more comprehensive view for alignment. Finally, the progressive learning framework gradually improves the quality of structural embeddings and enhances the alignment performance by enriching the pseudo-labeled data with alignment results from the previous round.
-   </td>
-   <td><a href="https://arxiv.org/abs/2101.10535">https://arxiv.org/abs/2101.10535</a>
-<p>
-<a href="https://github.com/DexterZeng/UEA">https://github.com/DexterZeng/UEA</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>8</h4>
-
-
-   </td>
-   <td>
-<h4>TransEdge: Translating Relation-contextualized Embeddings for Knowledge Graphs</h4>
-
-
-   </td>
-   <td>This paper proposes a novel edge-centric embedding model TransEdge, which contextualises relation  representations in terms of specific head-tail entity pairs. We refer to such contextualised representations of a relation as edge embeddings and interpret them as translations between entity embeddings. TransEdge achieves promising performance on different prediction tasks. It obtains the state-of-the-art results on embedding-based entity alignment.
-<p>
-They also show that TransEdge is complementary with conventional entity alignment methods. Moreover, it shows very competitive performance on link prediction as well.
-   </td>
-   <td><a href="https://arxiv.org/abs/2004.13579">https://arxiv.org/abs/2004.13579</a>
-<p>
-<a href="https://github.com/nju-websoft/TransEdge">https://github.com/nju-websoft/TransEdge</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>9</h4>
-
-
-   </td>
-   <td>
-<h4>KECG - Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model</h4>
-
-
-   </td>
-   <td>The basic idea of KECG is to utilise a
-cross-graph model to embed entities into a unified
-vector space by using inner-graph structure and
-inter-graph alignments information; meanwhile
-the knowledge embedding model learns KG
-representations to implicitly complete different
-KGs towards consistency and model relational
-constraints among entities. There are two key
-points for high-quality joint training. First, the
-completion from KG learning may exacerbate
-the heterogeneity between two KGs, because two
-KGs may contain different rich parts, which shall
-become richer during training. Second, different
-from conventional KG representation learning,
-entity alignment requires one-to-one mapping,
-which implies that the similar entities sharing
-common neighbours cannot be embedded closely,
-otherwise they shall be aligned incorrectly
-   </td>
-   <td><a href="https://aclanthology.org/D19-1274/">https://aclanthology.org/D19-1274/</a>
-<p>
-<a href="https://github.com/THU-KEG/KECG">https://github.com/THU-KEG/KECG</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>10</h4>
-
-
-   </td>
-   <td>
-<h4>EMGCN - Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks</h4>
-
-
-   </td>
-   <td>EMGCN guarantees (i) entity consistency – the names of corresponding entities should be equivalent, (ii) relation consistency – the relation is preserved from source KG to target KG, and (iii) attribute consistency – the corresponding entities should have equivalent attributes and equivalent attribute values. 
-<p>
-They use Relation-aware Multi-order Embedding to achieve this. 
-   </td>
-   <td><a href="https://ieeexplore.ieee.org/document/9262038">https://ieeexplore.ieee.org/document/9262038</a>
-<p>
-<a href="https://github.com/vinhsuhi/EMGCN">https://github.com/vinhsuhi/EMGCN</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>11</h4>
-
-
-   </td>
-   <td>
-<h4>Cross-lingual knowledge graph alignment via graph matching neural network</h4>
-
-
-   </td>
-   <td>Focused on cross-lingual knowledge graph alignment.
-<p>
 Aligns neighbourhood subgraphs around entities, using a 2-layer stacked GCN to encode local structural information and a cross-graph attention mechanism for cross-lingual KG representations. 
-<p>
-Entity embeddings derived only from monolingual KG structural information, which may fail at matching entities that have different facts in two KGs. In this paper, authors introduce the topic entity graph, a local sub-graph of an entity, to represent entities with their contextual information in KG. From this view, the KG-alignment task can be formulated as a graph matching problem; and they further propose a graph-attention based solution, which first matches all entities in two topic entity graphs, and then jointly model the local matching information to derive a graph-level matching vector. 
-   </td>
-   <td><a href="https://aclanthology.org/P19-1304/">https://aclanthology.org/P19-1304/</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h4>12</h4>
 
-
-   </td>
-   <td>
-<h4>List of state-of-the-art Entity Alignment methods on a list of common datasets</h4>
-
-
-   </td>
-   <td>Evaluation results and links to papers and codes are available here in the <strong>papers with code</strong> website.
-   </td>
-   <td><a href="https://paperswithcode.com/task/entity-alignment">https://paperswithcode.com/task/entity-alignment</a>
-   </td>
-  </tr>
+Entity embeddings derived only from monolingual KG structural information, which may fail at matching entities that have different facts in two KGs. In this paper, authors introduce the topic entity graph, a local sub-graph of an entity, to represent entities with their contextual information in KG. From this view, the KG-alignment task can be formulated as a graph matching problem; and they further propose a graph-attention based solution, which first matches all entities in two topic entity graphs, and then jointly model the local matching information to derive a graph-level matching vector. </td>
+        <td>https://aclanthology.org/P19-1304/</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>List of state-of-the-art Entity Alignment methods on a list of common datasets</td>
+        <td>Evaluation results and links to papers and codes are available here in the papers with code website.</td>
+        <td>https://paperswithcode.com/task/entity-alignment</td>
+    </tr>
 </table>
-
